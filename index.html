@@ -4,39 +4,54 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-    <link rel="stylesheet" type="text/css" href="./css/style.css" />
 
     <title>Frontend Mentor | Order summary card</title>
   </head>
   <body>
-    <div class="card">
-      <h1 class="card__heading">Order Summary</h1>
-      <p class="card__text">
-        You can now listen to millions of songs, audiobooks, and podcasts on any
-        device anywhere you like!
-      </p>
-
-      <div class="card__price">
+    <div class="container">
+      <div class="card">
         <img
-          src="./images/icon-music.svg"
-          alt="musice note"
-          class="card__price-icon"
+          src="./images/illustration-hero.svg"
+          alt="dancing man"
+          class="card__img"
         />
-        <div class="card__price-details">
-          <h2 class="card__price-details--heading">Annual Plan</h2>
-          <p class="card__price-details--text">$59.99/year</p>
-        </div>
-        <a href="#" class="card__price-link">Change</a>
-      </div>
+        <div class="card__container">
+          <h1 class="card__heading">Order Summary</h1>
+          <p class="card__text">
+            You can now listen to millions of songs, audiobooks, and podcasts on
+            any device anywhere you like!
+          </p>
 
-      <button class="card__button">Proceed to Payment</button>
-      <a class="card__link">Cancel Order</a>
+          <div class="card__price">
+            <img
+              src="./images/icon-music.svg"
+              alt="musice note"
+              class="card__price-icon"
+            />
+            <div class="card__price-details">
+              <h2 class="card__price-details--heading">Annual Plan</h2>
+              <p class="card__price-details--text">$59.99/year</p>
+            </div>
+            <a href="#" class="card__price-link">Change</a>
+          </div>
+
+          <button class="card__button">Proceed to Payment</button>
+          <a href="#" class="card__link">Cancel Order</a>
+        </div>
+      </div>
     </div>
 
     <div class="attribution">
