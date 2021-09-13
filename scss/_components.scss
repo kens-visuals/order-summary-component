@@ -1,40 +1,24 @@
-.container {
-  width: 90%;
-  max-width: 400px;
-}
-
 .card {
   width: 100%;
   background-color: #fff;
   overflow: hidden;
-  border-radius: 5%;
-  margin: 0 auto;
+  border-radius: 20px;
+  box-shadow: 0px 10px 30px -6px rgba($color-primary--dark, 0.3);
 
   &__img {
     width: 100%;
-  }
-
-  &__container {
-    width: 100%;
-    padding: 4rem;
-    margin: 0 auto;
-    text-align: center;
-
-    & > * {
-      margin-bottom: 3rem;
-    }
   }
 
   &__heading {
     color: $color-primary--dark;
     font-weight: $font-weight--medium;
     font-size: 2.5rem;
+    margin-bottom: 2rem;
   }
 
   &__text {
     width: 80%;
     font-size: 1.4rem;
-    margin: 0 auto;
     line-height: 2.5rem;
     margin-bottom: 2rem;
   }
@@ -61,10 +45,18 @@
         color: $color-primary--dark;
         font-weight: $font-weight--bold;
         margin-bottom: 0.5rem;
+
+        @media (max-width: 375px) {
+          font-size: 1.8rem;
+        }
       }
 
       &--text {
         font-size: 1.5rem;
+
+        @media (max-width: 375px) {
+          font-size: 1.8rem;
+        }
       }
     }
 
@@ -73,6 +65,17 @@
       color: $color-primary;
       font-weight: $font-weight--medium;
       font-size: 1.4rem;
+      transition: all 0.2s;
+
+      @media (max-width: 375px) {
+        font-size: 1.6rem;
+      }
+    }
+
+    &-link:hover,
+    &-link:active {
+      opacity: 0.6;
+      text-decoration: none;
     }
   }
 
@@ -85,6 +88,13 @@
     border-radius: 10px;
     border: none;
     font-weight: $font-weight--medium;
+    transition: all 0.2s;
+    box-shadow: 0px 10px 20px -3px rgba($color-primary, 0.5);
+
+    &:hover {
+      cursor: pointer;
+      opacity: 0.7;
+    }
   }
 
   &__link:link,
@@ -93,6 +103,17 @@
     color: $color-primary--light;
     font-weight: $font-weight--medium;
     text-decoration: none;
+    transition: all 0.2s;
+    margin-bottom: 0;
+
+    @media (max-width: 375px) {
+      font-size: 1.8rem;
+    }
+  }
+
+  &__link:hover,
+  &__link:active {
+    color: $color-primary--dark;
   }
 }
 
@@ -102,7 +123,16 @@
   position: absolute;
   bottom: 1rem;
 
-  & a {
-    color: hsl(228, 45%, 44%);
+  &__link:link,
+  &__link:visited {
+    text-transform: uppercase;
+    color: $color-primary;
+    transition: all 0.2s;
+  }
+
+  &__link:hover,
+  &__link:active {
+    text-transform: uppercase;
+    color: $color-primary--dark;
   }
 }
